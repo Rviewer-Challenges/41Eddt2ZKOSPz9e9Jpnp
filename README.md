@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# Firebase Chat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a chat application using [Firebase](https://firebase.google.com/) as your backend.
 
-## Available Scripts
+Firebase is one of the most widely used service platforms for creating applications worldwide. Thanks to it, we can
+integrate in our app (and at no cost to start) features as common as authentication, push notifications, real-time
+database, among many other services.
 
-In the project directory, you can run:
+Well, let's create a chat application (never wondered how they work?) that uses as many Firebase services as you want.
 
-### `yarn start`
+You will focus on the frontend, and Firebase will be your backend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Brais Moure Challenge card](.github/assets/rviewer-mouredev.png)
+> This is a challenge created by [MoureDev](https://www.twitch.tv/mouredev). He will review and give feedback to some
+> proposed solutions from the community in one of his Twitch livestreams 😻
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Surprise us! 😉**
 
-### `yarn test`
+## What you'll create
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### General level:
 
-### `yarn build`
+- The application will have a screen where you will have to login with your Google account.
+- Once logged in, you will be able to select another registered user to chat with from a list.
+- The chat will start.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Main screen:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Here you can select your Google account to access the App. This registration must be persisted in Firebase. If you are
+  already logged in, this screen will NOT be shown.
+- Somewhere in the application there must be the possibility to logout.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Chat screen:
 
-### `yarn eject`
+- Here comes the tricky part. You will have to represent the interaction in text format of the two users.
+- This chat will be in real time and the conversations will be saved, this means that every time you return to the chat
+  room you will be able to consult the previous messages.
+- As in most chats, your answers will be aligned to the right and those of the other users to the left.
+- You only have to represent text and the name of the user who sent it (it can be the text before the @ of your email).
+  This is a test application, keep in mind that in a real App you must protect the privacy of the users.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Extra points (optional)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here you rule! 😎
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Are you able to send push notifications to another device every time you are texted?
+- And also send images (and save them) through the chat?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technical requirements
 
-## Learn More
+* Create a **clean**, **maintainable** and **well-designed** code. We expect to see a good and clear architecture that
+  allows to add or modify the solution without so much troubles.
+* **Test** your code until you are comfortable with it. We don't expect a 100% of Code Coverage but some tests that
+  helps to have a more stable and confident base code.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To understand how you take decisions during the implementation, **please write a COMMENTS.md** file explaining some of
+the most important parts of the application. You would also be able to defend your code through
+[Rviewer](https://rviewer.io), once you submit your solution.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to submit your solution
+
+* Push your code to the `devel` branch - we encourage you to commit regularly to show your thinking process was.
+* **Create a new Pull Request** to `main` branch & **merge it**.
+
+Once merged you **won't be able to change or add** anything to your solution, so double-check that everything is as you
+expected!
+
+Remember that **there is no countdown**, so take your time and implement a solution that you are proud!
+
+--- 
+
+<p align="center">
+  If you have any feedback or problem, <a href="mailto:help@rviewer.io">let us know!</a> 🤘
+  <br><br>
+  Made with ❤️ by <a href="https://rviewer.io">Rviewer</a>
+</p>

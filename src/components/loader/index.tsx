@@ -1,4 +1,3 @@
-import { Wrapper } from "../../styled-components/utils";
 import Logo from "../../assets/logo";
 import { LoaderCOntainer, Spin, SpinContainer } from "./styles";
 
@@ -19,7 +18,6 @@ const spinerList: spinerProps[] = [
 
 export function Loader() {
   return (
-    <Wrapper>
       <LoaderCOntainer>
         <Logo />
         
@@ -31,6 +29,5 @@ export function Loader() {
           )}
         </SpinContainer>
       </LoaderCOntainer>
-    </Wrapper>
   )
 }

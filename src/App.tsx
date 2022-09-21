@@ -2,6 +2,16 @@ import { GlobalStyle } from './styled-components';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styled-components';
 import { Router } from './router';
+import * as firebase from "firebase/app";
+
+firebase.initializeApp({
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
+});
 
 function App() {
   return (

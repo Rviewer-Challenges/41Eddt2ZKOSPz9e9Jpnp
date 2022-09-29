@@ -46,5 +46,6 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26"
-  }
+  },
+  "keywords": ["create-react-app", "react", "typescript", "styled-components", "firebase", "react-router-dom"]
 }

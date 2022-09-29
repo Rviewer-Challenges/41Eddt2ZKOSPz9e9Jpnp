@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 type ParagraphProps = {
   type?: "time" | "chat" | "chat-name"
-  align?: "left" | "right" | "center" 
+  align?: "left" | "right" | "center"
+  color?: string
 }
 
 export const Paragraph = styled.p<ParagraphProps>`
@@ -20,7 +21,7 @@ export const Paragraph = styled.p<ParagraphProps>`
       ? "right"
       : "left"
   };
-  color: ${props => props.theme.colors.main};
+  color: ${props => props.color ? props.color : props.theme.colors.main};
   font-weight: 400;
 `
 

@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   border: 1px solid ${props => props.theme.colors.stroke};
   padding: 2em 5rem;
+  margin: 2em;
   background: ${props => props.theme.colors.bgWhite};
 `
 

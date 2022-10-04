@@ -22,7 +22,7 @@ export function Loader() {
         <Logo />
         
         <SpinContainer>
-          {spinerList.map((spiner) => 
+          {spinerList.map((spiner: spinerProps) => 
             (<Spin 
               key={spiner.id} 
               type={spiner.type} />)

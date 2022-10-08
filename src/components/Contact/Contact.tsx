@@ -1,5 +1,5 @@
-import avatar from "../../assets/Avatar.png";
-import { Heading4, Paragraph } from "../../styled-components";
+import avatar from "@/assets/Avatar.png";
+import { Heading4, Paragraph } from "@/styled-components";
 import { ContactCont, Content, ContentTime } from "./styles";
 
 export function Contact() {

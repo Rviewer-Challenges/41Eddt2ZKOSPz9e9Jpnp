@@ -1,9 +1,9 @@
 import { Container, LeftContainer, LeftTop, NameContainer, Email, Contacts, RightContainer, RightTop, ChatsContainer, ChatActions, ChatInput, ChatButton } from "./styles"
-import avatar from "../../assets/Avatar.png"
-import { Heading2 } from "../../styled-components"
-import { Contact } from "../../components/contact"
-import { Chat } from "../../components/chat"
-import send from "../../assets/sendMessage.png"
+import avatar from "@/assets/Avatar.png"
+import { Heading2 } from "@/styled-components"
+import { Contact } from "@components/Contact"
+import { Chat } from "@components/Chat"
+import send from "@/assets/sendMessage.png"
 
 export default function Home() {
   return (
@@ -29,8 +29,10 @@ export default function Home() {
         </RightTop>
 
         <ChatsContainer>
-          <Chat message="holapesdawdwdadawdawdwadwawadwadwadwdwadawdawdawdwad" name="ppe" time="10:10"/>
-          <Chat message="holapes" name="ppe" time="10:10"/>
+          <Chat message="holapes holapes holapesholapes holapes holapes holapes holapes" name="ppe" time="10:10 p.m."/>
+          <Chat message="holapes" name="ppe" type="rest" turn="other" time="10:10 p.m."/>
+          <Chat message="holapes" name="ppe" type="first" turn="me" time="10:10 p.m."/>
+          <Chat message="holapes" name="ppe" type="rest" turn="me" time="10:10 p.m."/>
         </ChatsContainer>
 
         <ChatActions>

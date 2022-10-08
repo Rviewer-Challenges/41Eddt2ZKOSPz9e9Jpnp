@@ -1,10 +1,10 @@
-import { Paragraph } from "../../styled-components";
+import { Paragraph } from "@/styled-components";
 import { Container, LoginButton, LoginContainer } from "./styles";
-import Logo from "../../assets/logo";
-import LogoGoogle from "../../assets/logoGoogle";
-import { signInWithGoogle } from "../../auth/google";
+import Logo from "@/assets/logo";
+import LogoGoogle from "@/assets/logoGoogle";
+import { signInWithGoogle } from "@/auth/google";
 import { useNavigate } from "react-router-dom";
-import { Wrapper } from "../../styled-components/utils";
+import { Wrapper } from "@/styled-components/utils";
 
 export default function Login() {
   let navigate = useNavigate();

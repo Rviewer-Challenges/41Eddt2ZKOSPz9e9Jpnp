@@ -21,8 +21,13 @@ export const Paragraph = styled.p<ParagraphProps>`
       ? "right"
       : "left"
   };
+  font-weight: ${props => 
+    props.type === "chat-name" 
+      ? 600
+      : 500
+  };
   color: ${props => props.color ? props.color : props.theme.colors.main};
-  font-weight: 400;
+  word-wrap: break-word;
 `
 
 export const Heading2 = styled.h2`

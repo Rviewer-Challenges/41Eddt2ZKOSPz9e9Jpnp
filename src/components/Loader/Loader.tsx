@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo";
+import Logo from "@/assets/logo";
 import { LoaderCOntainer, Spin, SpinContainer } from "./styles";
 
 type spinerProps = {

@@ -79,10 +79,8 @@ export const RightTop = styled.div`
 `
 
 export const ChatsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  padding: 3.75em 4.25em;
+  display: table;
+  padding: 2.25em 4.25em 3.75em 4.25em;
   background: url(${bgPattern});
   height: 100%;
 `

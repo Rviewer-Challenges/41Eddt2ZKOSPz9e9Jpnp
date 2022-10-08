@@ -22,5 +22,6 @@
   },
   "include": [
     "src", "src/assets"
-  ]
+  ],
+  "extends": "./tsconfig.paths.json"
 }

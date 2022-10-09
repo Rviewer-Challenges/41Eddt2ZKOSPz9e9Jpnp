@@ -1,19 +1,25 @@
-import avatar from "@/assets/Avatar.png";
-import { Heading4, Paragraph } from "@/styled-components";
+import { Heading4, Paragraph } from "@/styled-components/fonts";
 import { ContactCont, Content, ContentTime } from "./styles";
 
-export function Contact() {
+export type ContactProps = {
+  lastMessage?: string;
+  name: string;
+  time: string;
+  avatar: string;
+}
+
+export function Contact(props: ContactProps) {
   return (
     <ContactCont>
-      <img src={avatar} alt="alterego"/>
-      
+      <img src={props.avatar} alt={props.name}/>
+
       <Content>
-        <Heading4>Nombre del chat</Heading4>
-        <Paragraph type="chat" color="#000">Nombre: Mensaje</Paragraph>  
+        <Heading4>{props.name}</Heading4>
+        <Paragraph type="chat" color="#000">{props.lastMessage}</Paragraph>  
       </Content>
       
       <ContentTime>
-        <Paragraph type="time" color="#000">10:10 p.m.</Paragraph>
+        <Paragraph type="time" color="#000">{props.time}</Paragraph>
       </ContentTime>
     </ContactCont>
   )

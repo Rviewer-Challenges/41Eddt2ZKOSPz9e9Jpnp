@@ -1,4 +1,4 @@
-import { Paragraph } from "@/styled-components";
+import { Paragraph } from "@/styled-components/fonts";
 import { Container, LoginButton, LoginContainer } from "./styles";
 import Logo from "@/assets/logo";
 import LogoGoogle from "@/assets/logoGoogle";

@@ -1,4 +1,5 @@
 import Logo from "@/assets/logo";
+import { Paragraph } from "@/styled-components/fonts";
 import { LoaderCOntainer, Spin, SpinContainer } from "./styles";
 
 type spinerProps = {
@@ -20,7 +21,7 @@ export function Loader() {
   return (
       <LoaderCOntainer>
         <Logo />
-        
+        <Paragraph></Paragraph>
         <SpinContainer>
           {spinerList.map((spiner: spinerProps) => 
             (<Spin 

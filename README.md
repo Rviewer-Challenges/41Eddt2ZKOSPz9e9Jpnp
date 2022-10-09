@@ -26,8 +26,7 @@ You will focus on the frontend, and Firebase will be your backend.
 
 ### Main screen:
 
-- Here you can select your Google account to access the App. This registration must be persisted in Firebase. If you are
-  already logged in, this screen will NOT be shown.
+- Here you can select your Google account to access the App. This registration must be persisted in Firebase. If you are already logged in, this screen will NOT be shown.
 - Somewhere in the application there must be the possibility to logout.
 
 ### Chat screen:

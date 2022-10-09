@@ -1,12 +1,12 @@
-import { Paragraph } from "@/styled-components"
+import { Paragraph } from "@/styled-components/fonts"
 import { Container, ChatTime, HiddenName, Wrapper } from "./styles"
 
-type chatProps = {
-  type?: "rest" | "first"
-  turn?: "me" | "other"
+export type chatProps = {
   name: string
   message: string
   time: string
+  type?: "rest" | "first"
+  turn?: "me" | "other"
 }
 
 export function Chat({ 

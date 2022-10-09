@@ -18,7 +18,6 @@ export const LoginContainer = styled.div`
   flex-direction: column;
   align-items: left;
   margin-top: 2em;
-  
 `
 
 export const LoginButton = styled.button`
